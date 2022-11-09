@@ -18,7 +18,7 @@ Summary for Our algorithm &amp; Data Structure course
 ### <p id=1> introduction To Aglorithm </p>
 - [Vidoe](https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=1)
 - Summary 
-  - `Algorithm` => is a step by step precdure for solving computational problem.
+  - `Algorithm` => is a step by step precedure for solving computational problem.
   - `software cycle ` most important of it is
     - . design phase & implementation phase 
 
@@ -93,6 +93,8 @@ Summary for Our algorithm &amp; Data Structure course
                 S(n) = n+3
                 Then space is =>  O(n)
     */
+```
+```c
     // Sum Two Dimension Array 
     Algorithm Add(A,B,n)
      for(i=0;i<n;i++) // n +1
@@ -113,7 +115,8 @@ Summary for Our algorithm &amp; Data Structure course
         space is (3n^2 +3)
             O(n^2)
     */
-
+```
+```c
 // Martix Multiplication.
     Algorithm multiply(A,B,n)
         for(i=0;i<n;i++) //n+1
