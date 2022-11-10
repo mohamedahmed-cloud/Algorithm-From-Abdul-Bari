@@ -583,5 +583,63 @@ Summary for Our algorithm &amp; Data Structure course
 ---
 <p id=16>Best & Worst and Average case Analysis</p>
 
+```c
+    /*
+        linear search 
+            means make a for loop and search for a specific element in an array or something else.
+        B(n) =O(1)
+        W(n)=O(n)
+        average case =all possible cases /no.of cases
+        =1+2+3+....n/(n)
+        means -> n(n+1)/2*n
+        means -> (n+1)/2
+    */
+    /*
+    again there is no fixed notation for best case and worst case and average case.
+    */
+```
 
+```c
+    /*
+    binary search 
+        time is log(n) => length of tree.
+                20
+        10              30
+    5       15      25      40
+    for Search algorithm 
+        Min  Worst case is =log(n) -> length of tree -> in binary search.
+        Max Worst Case is =n => height of tree -> in linear serach 
+
+    */
+```
+----
+
+## <p id=17>Disjoint Sets</p>
+```c
+    /*
+    Disjoint => means two sets didn't have any common element 
+        1.find
+        2.union
+    set1={1,2,3,4}
+    set2={5,6,7,8} 
+    */
+    /* what are the disjoint set.
+        Dis-joint set data structure also known as the union or find data structure is used to partition set of elements into dis-joint sets according to some criteria. Disjoint-set data structure provides nearly about constant time operations for adding a new set,
+    
+    */
+    /*
+    implementation
+        Some of them are based on the linked list and some are based on rooted trees
+    */
+    /*
+    uses of it
+        - It is used to keep track of connected component in an undirected graph.
+        - It is used to detect cycles in the graph.
+        - It is used to calculate the minimum spanning tree in Kruskal's algorithm.
+        - It is used in Maze generation problems.
+        - Calculating mutual friends.
+    */
+```
+---
+<p id=18>Divide and Conquer</p>
 
