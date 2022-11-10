@@ -4,32 +4,36 @@ Summary for Our algorithm &amp; Data Structure course
 ----
 
 ### Most Of codes in this summary will be with Python language and psuedo code  
+## Videos on Youtube 
 
-## <a href="#1">Vidoe 1</a>
-## <a href="#2">Vidoe 2</a>
-## <a href="#3">Vidoe 3</a>
-## <a href="#4">Vidoe 4</a>
-## <a href="#5">Vidoe 5</a>
-## <a href="#6">Vidoe 6</a>
-## <a href="#7">Vidoe 7</a>
-## <a href="#8">Vidoe 8</a>
-## <a href="#9">Vidoe 9</a
-## <a href="#10">Vidoe 10</a>
-## <a href="#11">Vidoe 11</a>
-## <a href="#12">Vidoe 12</a>
-## <a href="#13">Vidoe 13</a>
-## <a href="#14">Vidoe 14</a>
-## <a href="#15">Vidoe 15</a>
-## <a href="#16">Vidoe 16</a>
-## <a href="#17">Vidoe 17</a>
-## <a href="#18">Vidoe 18</a>
-## <a href="#19">Vidoe 19</a>
-## <a href="#20">Vidoe 20</a>
+- From [here](https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O)
+
+## Summary of vidoe 
+- <a href="#1">Vidoe 1</a>
+- <a href="#2">Vidoe 2</a>
+- <a href="#3">Vidoe 3</a>
+- <a href="#4">Vidoe 4</a>
+- <a href="#5">Vidoe 5</a>
+- <a href="#6">Vidoe 6</a>
+- <a href="#7">Vidoe 7</a>
+- <a href="#8">Vidoe 8</a>
+- <a href="#9">Vidoe 9</a
+- <a href="#10">Vidoe 10</a>
+- <a href="#11">Vidoe 11</a>
+- <a href="#12">Vidoe 12</a>
+- <a href="#13">Vidoe 13</a>
+- <a href="#14">Vidoe 14</a>
+- <a href="#15">Vidoe 15</a>
+- <a href="#16">Vidoe 16</a>
+- <a href="#17">Vidoe 17</a>
+- <a href="#18">Vidoe 18</a>
+- <a href="#19">Vidoe 19</a>
+- <a href="#20">Vidoe 20</a>
 
 
 ----
 ### <p id=1> introduction To Aglorithm </p>
-- [Vidoe](https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=1)
+
 - Summary 
   - `Algorithm` => is a step by step precedure for solving computational problem.
   - `software cycle ` most important of it is
