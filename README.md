@@ -17,7 +17,7 @@ Summary for Our algorithm &amp; Data Structure course
 - <a href="#6">Vidoe 6</a>
 - <a href="#7">Vidoe 7</a>
 - <a href="#8">Vidoe 8</a>
-- <a href="#9">Vidoe 9</a
+- <a href="#9">Vidoe 9</a>
 - <a href="#10">Vidoe 10</a>
 - <a href="#11">Vidoe 11</a>
 - <a href="#12">Vidoe 12</a>
@@ -45,7 +45,7 @@ Summary for Our algorithm &amp; Data Structure course
 | design time| implementation time|
 |Domain knowledge | programmer|
 | use any programming lagnuage | use speific language| 
-|not hdepend on Hard ware & OS | depend on Hard ware & OS|
+|not depend on Hard ware & OS | depend on Hard ware & OS|
 |analze the algorithm | testing algorithm|
  
 ----------
@@ -59,7 +59,7 @@ Summary for Our algorithm &amp; Data Structure course
 
 - `input` => take `0` or more 
 - `output` => at least 1 O/P
-- Definiteness =>  use know value not like `sqrt(-1)` and `0/1` and so on.
+- Definiteness =>  use known value not like `sqrt(-1)` and `0/1` and so on.
 - `finiteness` => all algorithm must stop at some point.
 - `Effectiveness` => don't use unnecessary thing. 
 
@@ -80,12 +80,17 @@ Summary for Our algorithm &amp; Data Structure course
 ```
 - How to Analyse an Algorithm 
   - Find :
+  
     1.Time
+
     2.space
+
     3.Network consumption 
+
     4.Power consumption
-    CPU Registers consumption
-- 
+
+    5.CPU Registers consumption
+  
 ----
 ### <p id=5>Frequency Count Methods</p>
 ```c
@@ -124,7 +129,7 @@ Summary for Our algorithm &amp; Data Structure course
     Space
         A =>  n^2
         B => n^2
-        c =<> n^2
+        c => n^2
         n =>1
         i =>1
         j =>1
@@ -136,7 +141,7 @@ Summary for Our algorithm &amp; Data Structure course
 // Martix Multiplication.
     Algorithm multiply(A,B,n)
         for(i=0;i<n;i++) //n+1
-            for(i=0;j<n;j++) //n*(n+1)
+            for(j=0;j<n;j++) //n*(n+1)
                 c[i,j]=0; //n*(n)
                 for(k=0;k<n;k++)//n*n*(n+1)
                     c[i,j]=c[i,j]+A[i,k]*B[k,j];//n*n*n
@@ -157,7 +162,7 @@ Summary for Our algorithm &amp; Data Structure course
         */
 ```
 ----
-<p id=6>Time Complexity 1</p>
+## <p id=6>Time Complexity 1</p>
 
 ```c
     for(i=0;i<n;i++)
@@ -211,7 +216,7 @@ Summary for Our algorithm &amp; Data Structure course
 ### <p id=7>Time Complexity 2</p>
 
 ```c
-    for(i=1;i<n;i=i*2>)
+    for(i=1;i<n;i=i*2)
         // code here
     /*
     analyze Algorithm
@@ -248,9 +253,9 @@ Summary for Our algorithm &amp; Data Structure course
 ```
 
 ```c
-    for(i=0;i*i<n;i++)
-        // code here
     for(i=0;i<n;i++)
+        // code here
+    for(j=0;j<n;j++)
         // code here
     /*
     Analyze Algorithm
@@ -323,7 +328,7 @@ Summary for Our algorithm &amp; Data Structure course
     while (k<n)
         // code here 
         k=k+i;
-        i+=;
+        i+=1;
     /*
         analyze algorithm 
         i   k
@@ -347,7 +352,7 @@ Summary for Our algorithm &amp; Data Structure course
     // Time complexity is  => O(n)
 ```
 ----
-## <p id=9>Types of Time function</#p>
+## <p id=9>Types of Time function</p>
 
 ```c
     // f(n)=40000 then time complexity is constant => o(1)
@@ -394,7 +399,7 @@ Summary for Our algorithm &amp; Data Structure course
 ```
 ```c
     /*
-    Ω Big omega 
+    Ω omega 
     - f(n)>=c*g(n) then Ω is Ω(n)
         f(n)=2n+3   
         2n+3 >=1*n then Ω is Ω(n) or Ω(logn) or O(1)
@@ -410,7 +415,7 @@ Summary for Our algorithm &amp; Data Structure course
         then theta is Θ(n) we can't use n^2 or log2(n)
     */
 ```
-- `people` think taht big was used for `upper bound` as wrost case and Omega for `lower bound` as best case no. You Can use any notaion for best case any notation for wrost case.
+- `people` think that big O was used for `upper bound` as wrost case and Omega for `lower bound` as best case no. You Can use any notaion for best case any notation for wrost case.
 -----
 ## <p id=12> asymptotic Notaion 2</p>
 
@@ -495,7 +500,7 @@ Summary for Our algorithm &amp; Data Structure course
      then theta (n)=theta(g(n)) 
      */
 ``` 
----
+
 ----
 ## <p id=14>Comparison of Function</p>
 
@@ -513,7 +518,7 @@ Summary for Our algorithm &amp; Data Structure course
 ```
 ```c
     /*
-    f(n)=n^2log(n)          g(n)=n(log(n))^10
+    f(n)=(n^2)log(n)          g(n)=n(log(n))^10
     apply log
     log[n^2log(n)]          log[nlog(n)^10]
     log(n^2) +log[log(n)]   log(n) +log[log(n)^10]
@@ -527,13 +532,13 @@ Summary for Our algorithm &amp; Data Structure course
     /*
         f(n)=3n^(sqrt(n))       g(n)=2^(sqrt(n)*log(n))
         
-        3n^sqrt(n)              2^[log2(n)^sqrt(n)] 
-        3n^sqrt(n)              n^sqrt(n)
+        3n^sqrt(n)              2^[log2(n)*sqrt(n)] 
+        3n^sqrt(n)              n*sqrt(n)
         then first is bigger.
     */
 ```
 ----
-<p id=15>Comparison of Function 2</p>
+## <p id=15>Comparison of Function 2</p>
 
 ```c
     /*
@@ -580,7 +585,7 @@ Summary for Our algorithm &amp; Data Structure course
     g2(n)=n^2    ->  n<10_000
     g2(n)=n^3    ->  n>=10_000
 
-    ._______________________________________________>
+    |________|_________________|_______________|____
     1       100             10_000          finite
     g1>g2       g1=g2               g2>g1
 
@@ -598,7 +603,7 @@ Summary for Our algorithm &amp; Data Structure course
     */
 ```
 ---
-<p id=16>Best & Worst and Average case Analysis</p>
+## <p id=16>Best & Worst and Average case Analysis</p>
 
 ```c
     /*
@@ -633,16 +638,12 @@ Summary for Our algorithm &amp; Data Structure course
 
 ## <p id=17>Disjoint Sets</p>
 ```c
-    /*
-    Disjoint => means two sets didn't have any common element 
-        1.find
-        2.union
-    set1={1,2,3,4}
-    set2={5,6,7,8} 
-    */
     /* what are the disjoint set.
-        Dis-joint set data structure also known as the union or find data structure is used to partition set of elements into dis-joint sets according to some criteria. Disjoint-set data structure provides nearly about constant time operations for adding a new set,
-    
+        Dis-joint set data structure also known as the union or 
+        find data structure is used to partition set of elements
+        into dis-joint sets according to some criteria. 
+        Disjoint-set data structure provides nearly about 
+        constant time operations for adding a new set,
     */
     /*
     implementation
