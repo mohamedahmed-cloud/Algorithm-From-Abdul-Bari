@@ -29,9 +29,9 @@ Summary for Our algorithm &amp; Data Structure course
 - <a href="#18">Vidoe 18</a>
 - <a href="#19">Vidoe 19</a>
 - <a href="#20">Vidoe 20</a>
-- <a href="#21">Vidoe 21</a
+- <a href="#21">Vidoe 21</a>
 - <a href="#22">Vidoe 22</a>
-- <a href="#23">Vidoe 23</a
+- <a href="#23">Vidoe 23</a>
 - <a href="#24">Vidoe 24</a>
 - <a href="#25">Vidoe 25</a>
 - <a href="#26">Vidoe 26</a>
