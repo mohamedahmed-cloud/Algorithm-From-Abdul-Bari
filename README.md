@@ -29,6 +29,19 @@ Summary for Our algorithm &amp; Data Structure course
 - <a href="#18">Vidoe 18</a>
 - <a href="#19">Vidoe 19</a>
 - <a href="#20">Vidoe 20</a>
+- <a href="#21">Vidoe 21</a
+- <a href="#22">Vidoe 22</a>
+- <a href="#23">Vidoe 23</a
+- <a href="#24">Vidoe 24</a>
+- <a href="#25">Vidoe 25</a>
+- <a href="#26">Vidoe 26</a>
+- <a href="#27">Vidoe 27</a>
+- <a href="#28">Vidoe 28</a>
+- <a href="#29">Vidoe 29</a>
+- <a href="#30">Vidoe 30</a>
+- <a href="#31">Vidoe 31</a>
+- <a href="#32">Vidoe 32</a>
+
 
 
 ----
@@ -1320,6 +1333,8 @@ finally time complexity is O(n)
 ----
 - <p id=33>Merge Sort</p>
 
+- time complexity is O(nlogn)
+- space complexity is O(n+log(n)) -> O(n)
 ```c
     /*
     merge is combining a two sorted list in one single list
@@ -1366,6 +1381,7 @@ finally time complexity is O(n)
     */
 ```
 - full code using python.
+
 ```py
 # code taken from geeks for geeks website.
 
@@ -1447,8 +1463,80 @@ finally time complexity is O(n)
     Pros 
         1.is suitable for large size list.
         2.suitable for linked list.
-        3.
-    
+        3.External sorting.
+        4.stable
+        5.
+    */
+    /*
+    cons:
+        1.Extra space (not inplace sort)
+        2.No small problem.[for small size list is smaller]
+            . insertion sort    ->O(n^2)[may use with linked list]
+            . merge sort        ->O(nlog(n))
+            . mergesort slower than insertion sort if n<=15
+    */
+    /*
+    All the recursive algorithm use stack.
+    what could be the maximum size of the stack
+        depend on the tracing height of our tracing tree of merge sort
     */
 ```
+---
+## <p id=36>Quick Sort</p>
+
+```c 
+    partition(l,h){
+        pivot=A[l];
+        i=l,j=h;
+        while (i>j){
+        do {
+            i++;
+        }while(A[i]<=pivot);
+        do {
+            j--;
+        }while(A[j]>pivot);
+        if(i<j)
+            swap(A[i],A[j]);
+        }
+        swap(A[l],A[j]);
+        return j;
+    }
+    QuickSort(l,h){
+        if(l<h){
+            if(l<h){
+                j=partition(l,h);
+                QuickSort(l,j);
+                QuickSort(j+1,h);
+            }
+        }
+    }
+```
+---
+## <p id=37>Quick Sort Analysis</p>
+
+- best case & average case time ->` O(nlog(n))`
+- worst case -> `O(n^2)` => when array is sorted.
+- space -> `inplace algorithm`  `O(1)`
+```c
+      QuickSort(l,h){
+        if(l<h){
+            if(l<h){
+                j=partition(l,h);   
+                QuickSort(l,j);     
+                QuickSort(j+1,h);   
+            }
+        }
+    }
+    /*
+        To improve quick sort in worst case 
+            don't use first element as a pivot.
+    improveing  ->  you can use the middle element in array.
+                ->  Select a Random element as pivot here again worst case is O(n^2)
+
+        The size of stack that used in quick sort 
+            best case is -> O(logn)
+            worst case is -> O(n)
+    */
+```
+
 
