@@ -1029,7 +1029,7 @@ finally time complexity is O(n)
     case 2:
         if logb(a)=k    
             if p>-1  -> O(n^k X log(n)^(p+1))
-            if p==-1->  O(n^k X loglog(n))
+            if p=-1->  O(n^k X loglog(n))
             if p<-1 ->  O(n^k)
     case 3:
         if logb(a) <k:
@@ -1053,7 +1053,266 @@ finally time complexity is O(n)
 ```c
     /*
     T(n)=4T(n/2)+n
-    
-    
+
+    log2(4)=2>k=1 p=0
+    O(n^2)    
     */
 ```
+```c
+    /*
+    T(n)=8T(n/2)+n
+    log2(8)=3
+    k=1
+    Then Time complexity is O(n^3)
+
+
+    T(n)=8T(n/2)+n^2
+    log2(8)=3
+    k=2
+    Then Time complexity is O(n^3)
+    */
+```
+```c
+    /*
+    T(n)=4T(n/2)+n
+    log2(4)=2
+    k=1
+    then Time complexity is O(n^2)
+    */
+```
+```c
+    /*
+    T(n)=2T(n/2)+n
+        log2(2)=1
+        k=1
+        then k=logb(a) and p=0
+        then Time  n^1 log(n)
+        O(nlogn) 
+    */
+```
+```c
+    /*
+    T(n)=2T(n/2)+n/log(n)
+    log2(2)=1
+    k=1
+    p=-1
+    then Time O(nloglog(n))
+    */
+```
+```c
+    /*
+        T(n)=T(n/2)+n^2
+        log2(1)=0
+        k=2
+        p=0
+        then time complexity is O(n^2)
+    */
+```
+---
+## <p id=28></p>
+
+```c
+    /*
+        T(n)=2T(n/2)+1 
+        log2(2)=1
+        k=0
+        o(n)
+    */
+    /*
+        t(n)=4T(n/2)+1  
+        log2(4)=2
+        k=0
+        O(n^2)
+    */
+    /*
+    t(n)=4t(n/2)+n
+        log2(4)=2
+        k=1
+        O(n^2)
+    */
+```
+```c
+    /*
+        T(n)=T(n/2)+n           -> O(n)
+        T(n)=2T(n/2)+n^2        -> O(n^2)
+        T(n)=2T(n/2)+n^2logn    ->O(n^2logn)
+    */
+```
+```c
+    /*
+        T(n)=T(n/2)+1           -> o(log(n))
+        T(n)=T(n/2)+n           -> O(nlogn)
+        T(n)=T(n/2)+nlog(n)     -> O(nlog(n)^2)
+        T(n)=2T(n/2)+n/log(n)   -> O(nloglog(n))
+        T(n)=2T(n/2)+n/log(n)^2 -> O(n)
+    */
+```
+----
+## <p id=29>Root Function</p>
+
+```c
+    /*
+    T(n)=T(sqrt(n))+1
+    t(n)=T(n^1/2)+1
+    t(n)=T(n^1/2^2)+2 
+    t(n)=t(n^1/2^k)+k
+
+    assume n=2^m
+    t(n)=t(2^m/2^k)+k
+    assume t(2^m/2^k) =t(2)
+    m/2^k=1
+    m=2^k
+    then k=log2(m)
+    n=2^m
+    m=log2(n)
+    then k=log2log2(n)
+    Time complexity     ---->   O(loglog(n))
+    */
+```
+---
+## <p id=30>Binary Search </p>
+- Code With python
+```py
+#   To use binary search array should be sorted.
+#   Time complexity ----> O(log2(n))
+#   Average time is time for each element/number of element 
+    # Then average time is also O(logn)
+    def binary_Search(arr,l,h,key):
+        while l<=h:
+            mid=(l+h)//2
+            if key>arr[mid]:
+                l=mid+1
+            elif key<arr[mid]:
+                h=mid-1
+            elif key=arr[mid]:
+                return mid
+        return -1
+```
+- by pseudo code
+```c
+    int binary_Search(A,n,key){
+        l=1;h=n;
+        while(l<=h){
+            mid=(l+h)/2;
+            if (key=A[mid])
+                return mid;
+            
+            else if (key<A[mid])
+                h=mid-1;
+            else 
+                l=mid+1;
+        }
+        return -1
+    }
+```
+------
+<p id=31>Binary Search Recursive Method</p>
+
+- code by python
+
+```py
+    def binary search(arr,l,h,key):
+        mid=(l+h)//2
+        if l<=h:
+            if key<arr[mid]:
+                return binary_search(arr,l,mid-1,key)
+            elif key>arr[mid]:
+                return binary_search(arr,mid+1,h,key)
+            else:
+                return mid
+        else:return -1
+```
+- pseudo code 
+```c
+    binary_search(l,h,key){     //1
+        if(l<=h){
+            mid=(l+h)/2         //1
+            if (key=A[mid])
+                return mid
+            else if (key<A[mid])
+                h=mid-1
+            else
+                l=mid+1
+            return binary_search(l,h,key) //n/2
+        }
+        else
+            return -1 //means element not found.
+    }
+    /*
+    recurrance relation.
+
+            1           n=1
+    T(n)=
+            t(n/2)+1    n>1
+    
+    Then time is O(log(n))
+    */
+```
+---
+<p id=32>Heap heap Sort</p>
+
+- Time complexity for `best & average & worst`   O(nlogn)
+- Space Complecity  O(1)
+- heap help us to build heapsort & priority queue.
+- This summary form Adel Nasim [video](https://www.youtube.com/watch?v=REOsj0nYWKE&t=10s)
+
+```c
+    /*
+    to use heap 
+        should use complete binary tree.
+        complete binary tree.
+            when create tree we complete tree from left to right.
+        we can represent complete binary tree as an array.
+        To know if array start from 1-index:
+            parent of node of index i   -> i//2
+            left node of index i        -> 2*i
+            right node of index i       -> 2*i+1
+        To know if array start from 0-index:
+            parent of node of index i   -> i//2-1
+            left node of index i        -> 2*i+1
+            right node of index i       -> 2*i+2
+    */
+    /*
+    heap -> is a complete binary tree.
+    types:  Max heap -> every parent greater than or equal it's child.
+            Min Heap -> every parent smaller than or equal it's child.
+
+    notes: not all complete binary tree is a heap.
+    to convert complete binary tree to heap use heapify function [in python use heapq module]
+    */
+```
+- code with python 
+```py
+# Time is nlog(n)
+    def heapify(arr, n, i):
+        largest = i 
+        l = 2 * i + 1 
+        r = 2 * i + 2 
+        if l < n and arr[i] < arr[l]:
+            largest = l
+        if r < n and arr[largest] < arr[r]:
+            largest = r
+        if largest != i:
+            (arr[i], arr[largest]) = (arr[largest], arr[i])  
+            heapify(arr, n, largest)
+    def heapSort(arr):
+        n = len(arr)
+        # build heap
+        # time is O(n)
+        for i in range(n // 2 - 1, -1, -1):
+            heapify(arr, n, i)
+        # to sort.
+        # time is O(n)
+        for i in range(n - 1, 0, -1):
+            (arr[i], arr[0]) = (arr[0], arr[i]) 
+            heapify(arr, i, 0)
+    arr = [12, 11, 13, 5, 6, 7]
+    heapSort(arr)
+    n = len(arr)
+    print('Sorted array is')
+    for i in range(n):
+        print(arr[i])
+```
+----
+- summary from Dr.Abdul Bari.
+  - comming soon.
