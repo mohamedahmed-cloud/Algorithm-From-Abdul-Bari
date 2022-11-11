@@ -661,3 +661,399 @@ Summary for Our algorithm &amp; Data Structure course
 ---
 <p id=18>Divide and Conquer</p>
 
+```c
+    /*
+    Divide and conquer is a strategy like :
+        greedy algorithm 
+        dynamic programming.
+        backtracking .
+        branch and bound.
+    */
+    /*
+    strategy -> is a approach or a design for solving a problem.
+    */
+    /*
+    divide means that you divide your problem into small
+    thing then solve it and then combine the solution.
+    */
+```
+```c
+    // Divide and conquer main algorithm 
+    DA(p) {
+        if(small(p))
+            s(p);
+        else{
+            divide p into p1,p2,p3,.....
+            apply DA(p1),DA(p2),....
+            combine (DA(p1) DA(p2))
+        }
+    }
+```
+- Topic of Divide and conquer   
+  - Binary Search
+  - Finding Maximun and Minimum
+  - Merge Sort
+  - Quick Sort
+  - Strassens Martrix Multiplication.
+- all Divide and conquer depend on recurrance algorithm so
+we will study recurrane(recursive) algorithm first.
+
+-----
+
+## <p id=19>Recurrence Relation</p>
+
+- code by c
+```c
+    void test(int n){   //t(n)
+        if (n>0){       
+            printf("%d",n); //1
+            test(n-1); //T(n-1)
+        }
+    }
+    /*
+    number of calls make is n+1 call.
+    Time complexity --> O(n)
+
+    for the currance relation we call f(n) is T(n)
+
+             1         n=0
+    T(n)
+            T(n-1)+1   n>0
+    */
+     /*
+     Find time complexity by substitute methods
+        t(n)=t(n-1)+1
+        t(n-1)=t(n-2)+1 
+then    t(n-1)=t(n-2)+2     and so on.
+
+        t(n-1)=t(n-k)+k
+        assume  n-k=0
+                n=k
+        T(n)=T(n-n)+n
+        T(n)=T(0)+n
+        t(n)=1+n
+finally time complexity is O(n)
+     */
+```
+---
+### <p id=20>Recurrence Relation</p>
+
+```c
+    void test(int n){
+        if(n>0){ //1
+            for(i=0;i<n;i++){ //n+1
+                print("%d",n); //n
+            }
+            test(n-1); //T(n-1)
+        }
+    }
+    /*
+    T(n)=T(n-1)+2n+2    ->take asymoptic notation for 2n+2
+    T(n)=T(n-1)+n
+
+            1           n=0
+    T(n)=
+            T(n-1)+ n   n>0
+    
+    Time by tree method
+            t(n)                                n
+        n           t(n-1)
+                n-1             t(n-2)          n-1
+                            n-2         t(n-3)  n-2 and so on.
+
+    then time is 0+1+...n-1+n => n(n+1)/2 
+    then time complexity is O(n^2)
+    */
+    /*
+    find time complexity by substitute
+                1           n=0
+    T(n)=
+            T(n-1)+ n   n>0
+    
+    t(n)=t(n-1)+n
+    t(n-1)=t(n-2)+n-1
+    t(n-2)=t(n-3)+n-2 and so on.
+    t(n-n)=t(0)+n-n
+    then t(n)=t(n-n)+(n-n+1)+(n-n+2)+......+(n-1)+n
+    then t(n)=t(0) +0 +1+2+3+..n
+    then t(n)=1+n*(n+1)/2
+    then time complexity is O(n^2)
+    */
+```
+---
+<p id=21>Recurrance Relation</p>
+
+```c
+    void test(int n){
+        if (n>0){ //1
+            for(i=0;i<n;i=i*2){ //log(n)
+                print("%d",i);  // log(n)
+            }
+            test(n-1)//t(n-1)
+        }
+    }
+    /*
+
+            1               n=0
+    t(n)=
+            t(n-1)+log(n)   n>0
+
+    t(n)=t(n-1)+log(n)
+    Time by tree
+            t(n)                                    
+        log(n)  t(n-1)                              log(n)
+
+            log(n-1)    t(n-2)                      log(n-1)
+
+                    log(n-2)    t(n-3)              log(n-2)
+
+                            log(n-3)    t(n-4)      log(n-4)
+        
+    t(n)=log(n)+log(n-1)+log(n-2)
+        log[n*(n-1)*(n-2).....2*1]
+        log(n*n)
+        nlog(n)
+    */
+    /*
+    Find time complexity by substitute
+
+        t(n)=t(n-1)+log(n)
+        t(n)=t(n-2)+log(n-1)+log(n)
+        t(n)=t(n-3)+log(n-2)+log(n-1)+log(n)
+        t(n)=t(0)+log(n!)
+        t(n)=log(n!) => log(n^n) 
+        O(nlog(n))
+    */
+```
+```c
+    /*
+    t(n)=t(n-1)+1       -> O(n)
+    t(n)=t(n-1)+n       ->O(n^2)
+    t(n)=t(n-1)+log(n)  ->O(nlog(n))
+    t(n)=t(n-1)+n^2     ->O(n^3)
+    t(n)=t(n-2)+1        ->O(n)
+    t(n)=t(n-100)+n     ->O(n^2)
+    t(n)=2t(n-1)+1      ->answer in next video   
+    */
+```
+----
+## <P id=22>Recurrance Relation</P>
+
+```c
+    test(int n){ //t(n)
+        if(n>0){ 
+            print("%d",n);  //1
+            test(n-1);      //t(n-1)
+            test(n-1);      //t(n-1)
+        }
+    }
+    /*
+    t(n)=2t(n-1)+1
+
+            1           n=0
+    t(n)=
+            2t(n-1)+1   n>0
+    */
+    /*
+    Time using tree method 
+                        t(n)                                1
+    1       t(n-1)                  t(n-1)                  2
+        1  t(n-2)     t(n-2)   1  t(n-2)  t(n-2) and so on. 4
+    
+    time is 1   2   4   8   16 ---> total time is 2^k
+            1   2   2^2 2^3 2^4    ..k  -> (2^k-1)/(2-1)
+    formula a1   a2   a2^2 a2^3 a2^4    ..k  -> a((2^k)-1)/(2-1)
+    */
+    /*
+    solve using substitute method
+             1           n=0
+    t(n)=
+            2t(n-1)+1   n>0
+    
+    t(n)=2t(n-1)+1
+        =2[2t(n-2)+1]+1
+        =2^2[t(n-2)]+2+1
+        =2^2[2t(n-3)+2]+2+1
+        =2^3[t(n-3)]+2^2+2+1
+    t(n)=2^k(t(n-k)+2^(k-1)+........2^2+2+1
+    let k=n
+        =2^n*1+1+2+2^2+2^3......2^k-1
+        =2^n+2^k -> n=k
+        =2^(n+1)
+    then time is 2^k or 2^n
+    Time complexity is O(2^k)
+    */
+```
+----
+
+<p id=23>Master Theorem for Decreasing Function</p>
+
+```c
+    /*
+    t(n)=t(n-1)+1       -> O(n)
+    t(n)=t(n-1)+n       -> O(n^2) 
+    t(n)=t(n-1)+log(n)  -> O(nlog(n))
+    t(n)=2t(n-1)        -> O(2^n)
+    t(n)=3t(n-1)        -> O(3^n) -> and so on.
+    t(n)=2t(n-1)+n      -> O(n2^n)
+    */
+
+    /*
+    Master theory 
+        T(n)=a(t-b)+f(n)
+        assume a>0 and b>0 and f(n) =O(n^k) while k>=0
+            -> note b>0 should be greater than 0.
+
+        if a=1          -> O(n^(k+1)) or 
+                        -> O(n*f(n))
+
+        if a>1          ->O((n^k)*(a^(n/b)))
+
+        if a<1          -> O((n^k)*a^(n/b)) or 
+                        -> O(f(n)*a^(n/b))
+
+    */
+``` 
+<p id=24>Reurrance Relation Dividing Function</p>
+
+```c
+    test(int n){ //1
+        if(n>1){
+            printf("%d",n); //1
+            test(n/2) //n/2-1
+        }
+    }
+    /*
+    Recurrance relation
+
+                1           n=1
+        t(n)=
+                t(n/2)+1    n>1
+    */
+
+    /*
+        using tree method
+            t(n)                            
+        1           t(n/2)                  
+                1           t(n/2)          
+                        1           t(n/4)  
+    finally t(n/2^k)=t(1)
+    n/2^k =n=2^k ->     k=log(n)
+    time is the length of the tree then time is log2(n)
+    Time complexity is -> O(log(n))
+    */
+
+    /*
+    by subtitution
+    t(n)=t(n/2)+1
+        =t(n/4)+1
+        =t(n/8)+1
+        =t(n/2^k)+2
+        then time complexity is -> O(log(n))
+    */ 
+```
+----
+
+## <p id=25>Recurrance Relation</p>
+
+```c
+
+    /*
+    recurrance relation
+            1           n=1
+    t(n)=  
+            t(n/2)+n    n>1
+    */
+
+    /*
+    find by tree methods
+            t(n)                                        
+        n           t(n/2)                              n
+                n/2           t(n/4)                    n/2
+                    n/4           t(n/8)                n/4
+                                n/8           t(n/16)   n/8
+        
+        finally reach to t(n/2^k)
+        n+n/2+n/2^2 ...... n/2^k
+        n[1+1/2+1/2^2....1/2^k]
+        n*2
+        then time complexity is O(n)
+    */
+```
+----
+## <p id=26>Recurrance Relation</p>
+
+```c
+    
+    test(int n){
+        if(n>1){  //1
+            for(i=0;i<n;i++){ //n
+                // code here    
+            }
+            test(n/2) //t(n/2)
+            test(n/2) //t(n/2)
+        }
+    }
+    /*
+    recurrance relation.
+
+                1               n=1
+        t(n)=  
+                2t(n/2)+n     n>1
+    */
+    /*
+        Find time by tree method.
+                t(n)            
+        t(n/2)                  t(n/2)                   n                              -> n
+    t(n/4)  t(n/4)  n/2    t(n/4)   t(n/4)  n/2     n/2          n/2    and so on.      -> n
+
+    this operation will to for n/2^k times
+    n/2^k=1
+    2^k=n
+    k=log(n)
+    all of these operation will take n times
+    then time complexity is O(nlog(n))
+    */
+```
+---
+## <p id=27>Master theory for Dividing Function</p>
+
+```c
+    /*
+    Formula
+        T(n)=aT(n/b)+f(n)
+    assume a>=1 and b>1 and f(n)=O( n^k X log(n)^p)
+
+    case 1:
+        if logb(a)>k then -> O(n^[logb(a)])
+    case 2:
+        if logb(a)=k    
+            if p>-1  -> O(n^k X log(n)^(p+1))
+            if p==-1->  O(n^k X loglog(n))
+            if p<-1 ->  O(n^k)
+    case 3:
+        if logb(a) <k:
+            if p>=0:
+                O(n^k X log(n)^p)
+            if p<0:
+                O(n^k)
+    */
+```
+```c
+    /*
+    T(n)=2T(n/2)+1
+        a=2
+        b=2
+        f(n)=O(1)
+            =O(n^0 X log(n)^0)
+    log2(2)>k=0
+    Then time is O(n)
+    */
+```
+```c
+    /*
+    T(n)=4T(n/2)+n
+    
+    
+    */
+```
