@@ -48,7 +48,7 @@ Summary for Our algorithm &amp; Data Structure course
 - <a href="#37">Vidoe 37</a>
 
 ----
-### <p id=1> introduction To Aglorithm </p>
+## <p id=1> introduction To Aglorithm </p>
 
 - Summary 
   - `Algorithm` => is a step by step precedure for solving computational problem.
@@ -65,13 +65,13 @@ Summary for Our algorithm &amp; Data Structure course
 |analze the algorithm | testing algorithm|
  
 ----------
-### <p id=2>Priori Analysis and Posteriori Testing</p>
+## <p id=2>Priori Analysis and Posteriori Testing</p>
 
 - `Priori Analysis` => Means we wil do the analysis to find time & space.
 - `Posteriori Testing` => Done on the program. We run and check it to know number of millsecond token and memeory consuming.
 ----
 
-### <p id=3>Characteristics of Algorithm.</p>
+## <p id=3>Characteristics of Algorithm.</p>
 
 - `input` => take `0` or more 
 - `output` => at least 1 O/P
@@ -80,7 +80,7 @@ Summary for Our algorithm &amp; Data Structure course
 - `Effectiveness` => don't use unnecessary thing. 
 
 ----
-### <p id=4>How to Write an Agorithm</p>
+## <p id=4>How to Write an Agorithm</p>
 
 - in writing psuedo code don't have to make `variable declaration`
 ```c
@@ -108,7 +108,7 @@ Summary for Our algorithm &amp; Data Structure course
     5.CPU Registers consumption
   
 ----
-### <p id=5>Frequency Count Methods</p>
+## <p id=5>Frequency Count Methods</p>
 ```c
     // sum all element in one dimension array.
     Algorithm sum(A,b) 
@@ -229,7 +229,7 @@ Summary for Our algorithm &amp; Data Structure course
     // Finally Time => O(sqrt(n))
 ```
 ----
-### <p id=7>Time Complexity 2</p>
+## <p id=7>Time Complexity 2</p>
 
 ```c
     for(i=1;i<n;i=i*2)
@@ -675,7 +675,7 @@ Summary for Our algorithm &amp; Data Structure course
     */
 ```
 ---
-<p id=18>Divide and Conquer</p>
+## <p id=18>Divide and Conquer</p>
 
 ```c
     /*
@@ -752,7 +752,7 @@ finally time complexity is O(n)
      */
 ```
 ---
-### <p id=20>Recurrence Relation</p>
+## <p id=20>Recurrence Relation</p>
 
 ```c
     void test(int n){
@@ -797,7 +797,7 @@ finally time complexity is O(n)
     */
 ```
 ---
-<p id=21>Recurrance Relation</p>
+## <p id=21>Recurrance Relation</p>
 
 ```c
     void test(int n){
@@ -902,7 +902,7 @@ finally time complexity is O(n)
 ```
 ----
 
-<p id=23>Master Theorem for Decreasing Function</p>
+## <p id=23>Master Theorem for Decreasing Function</p>
 
 ```c
     /*
@@ -930,7 +930,7 @@ finally time complexity is O(n)
 
     */
 ``` 
-<p id=24>Reurrance Relation Dividing Function</p>
+## <p id=24>Reurrance Relation Dividing Function</p>
 
 ```c
     test(int n){ //1
@@ -1125,7 +1125,7 @@ finally time complexity is O(n)
     */
 ```
 ---
-## <p id=28></p>
+## <p id=28>Example for Master theory</p>
 
 ```c
     /*
@@ -1222,7 +1222,7 @@ finally time complexity is O(n)
     }
 ```
 ------
-<p id=31>Binary Search Recursive Method</p>
+## <p id=31>Binary Search Recursive Method</p>
 
 - code by python
 
@@ -1265,7 +1265,7 @@ finally time complexity is O(n)
     */
 ```
 ---
-<p id=32>Heap heap Sort</p>
+## <p id=32>Heap heap Sort</p>
 
 - Time complexity for `best & average & worst`   O(nlogn)
 - Space Complecity  O(1)
@@ -1334,7 +1334,7 @@ finally time complexity is O(n)
   - comming soon.
 
 ----
-- <p id=33>Merge Sort</p>
+## <p id=33>Merge Sort</p>
 
 - time complexity is O(nlogn)
 - space complexity is O(n+log(n)) -> O(n)
