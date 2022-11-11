@@ -41,8 +41,11 @@ Summary for Our algorithm &amp; Data Structure course
 - <a href="#30">Vidoe 30</a>
 - <a href="#31">Vidoe 31</a>
 - <a href="#32">Vidoe 32</a>
-
-
+- <a href="#33">Vidoe 33</a>
+- <a href="#34">Vidoe 34</a>
+- <a href="#35">Vidoe 35</a>
+- <a href="#36">Vidoe 36</a>
+- <a href="#37">Vidoe 37</a>
 
 ----
 ### <p id=1> introduction To Aglorithm </p>
