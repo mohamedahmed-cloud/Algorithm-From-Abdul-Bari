@@ -446,7 +446,7 @@ Summary for Our algorithm &amp; Data Structure course
 ```c
     /*
         f(n)=n^2log(n)+n
-            O(n^log(n)) & Omega(n^2log(n)) & theta(n^2log(n))
+            O(n^2log(n)) & Omega(n^2log(n)) & theta(n^2log(n))
     */
 ```
 ```c
@@ -614,7 +614,7 @@ Summary for Our algorithm &amp; Data Structure course
         (n+k)^m =O(n^m)             --> true.
         (2^(n+1))=O(2^n)            --> true.
         (2^2n)=O(2^n)               --> false.
-        sqrt(log(n))=O(loglog(n))   --> false. -ask some one.
+        sqrt(log(n))=O(loglog(n))   --> false.
         n(log(n))=O(2^n)            --> true.
     */
 ```
@@ -1157,8 +1157,8 @@ finally time complexity is O(n)
 ```c
     /*
         T(n)=T(n/2)+1           -> o(log(n))
-        T(n)=T(n/2)+n           -> O(nlogn)
-        T(n)=T(n/2)+nlog(n)     -> O(nlog(n)^2)
+        T(n)=2T(n/2)+n          -> O(nlogn)
+        T(n)=2T(n/2)+nlog(n)    -> O(nlog(n)^2)
         T(n)=2T(n/2)+n/log(n)   -> O(nloglog(n))
         T(n)=2T(n/2)+n/log(n)^2 -> O(n)
     */
@@ -1268,7 +1268,7 @@ finally time complexity is O(n)
 ## <p id=32>Heap heap Sort</p>
 
 - Time complexity for `best & average & worst`   O(nlogn)
-- Space Complecity  O(1)
+- Space Complex./.ity  O(1)
 - heap help us to build heapsort & priority queue.
 - This summary form Adel Nasim [video](https://www.youtube.com/watch?v=REOsj0nYWKE&t=10s)
 
