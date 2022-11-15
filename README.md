@@ -1541,5 +1541,181 @@ finally time complexity is O(n)
             worst case is -> O(n)
     */
 ```
+----
 
+## <p id=39>Greedy method Introduction</p>
 
+```c
+    /*
+    Greedy method: is one of approach for solving problem
+    using for solving optimization problem[problems that need max and min result]
+
+    fessible Solution : means a solution which is satisfied some constraints.
+
+    optimal solution : a solution which need min result or max result
+
+    strategy for solving optimization problem: 
+        1.Greedy Method.
+        2.Dynamic programming.
+        3.Branch and Bound.
+    */
+```
+```c
+    /*
+    greedy method approach : Says that a problem should be solved in stage in each stage consider one input from a given problem and if that input is fessible then include in the solution.
+    */
+    for i= 1 to n do {
+        x=select(a);
+        if fessible(x) then
+            solution =solution + x
+    }
+```
+----
+## <p id=39>Knapsack Problem </p>
+
+- This a an easy version from `knapsank problem`
+
+```c
+    /*
+    Problem Discription : 
+    
+        we have a bag called knapsack and want to full it with somethings 
+        every thing has a value.
+        we want to full this page value be maximum value.
+        - note we can make a divide for any thing we put in the bag 
+            let say we have a thing called x it weight is 4 it's value is 50
+            here we can take a 2 weight of it and take 25 as a value.     
+    */
+    /*
+    bag capacity is 15. --> m=15
+        - we divide a [profit/weight] the take the max one first and second and so on.
+
+    */
+```
+---
+## <p id=40>Job Sequencing with Deadlines </p>
+
+```c
+    /*
+    problem Description :
+        we take number of jobs.
+        every task have a profit and deadline:
+            to take profit of each task you should finish task before deadlines
+        each job take one unit of time for completion.
+    */
+    /*
+    n => number of jobs:
+    n=5
+    jobs        : j1    j2     j3   j4   j5
+    profits     : 20    15     10   5    1 
+    deadlines   : 2     2      1    3    3
+
+    0______1_______2__________3  -> is the time i can complete tasks on it.
+       j2     j1        j4
+    time start from zero and end on the last task time.
+    */
+```
+- code with python.
+```py
+    import sys,math
+    n=int(input())
+    jobs=list(map(int,sys.stdin.readline().split()))
+    profits=list(map(int,sys.stdin.readline().split()))
+    all=[0]*n
+    for i in range(n):
+        all[i]=[profits[i],jobs[i]]
+    all.sort(reverse=True)
+    print(all)
+    check=[0]*max(jobs)
+    ans=0
+    for i in range(n):
+        if check[all[i][1]-1]==0:
+            check[all[i][1]-1]=1
+            ans+=all[i][0]
+            print(all[i][0])
+            # print(check)
+        else:
+            j=1
+            while j<=all[i][1] and all[i][1]-j-1>=0:
+                if check[all[i][1]-j-1]==0:
+                    check[all[i][1]-j-1]=1
+                    ans+=all[i][0]
+                    break
+                # print(check,"from here")
+                j+=1
+
+    print(check)
+    print(ans)
+```
+---
+## <p id=42>Optimal Merge Pattern</p>
+
+```c
+    /*
+    remember to make a merge between two array the two array should be sorted.
+    to make a merge for more than two array there are more ways to do it.
+        - First : merge Random first one with second then merge result with three and so on.
+        - Second : merge only two array with other until reach to only two array and merge them.
+        - Thrid : optimal solution -> on each merge choose the smallest two array and merge them until reach to only two array and then merge them.
+    */
+```
+---
+## <p id=43>Huffman Coding</p>
+
+```c
+    /*
+    Huffman -> is a comparison technique it use for reducing the size of data or message.
+    remember -> each char represent in 8 bits.
+    A -> 65 ->0100_0001 and so on.
+    we can use huffman approach to make encode for these char and save size.
+    */
+```
+- message `BCCABBDDAECCBBAEDDCC` without encoding use `20*8=160bit`
+
+| Char | Count/Frequecy | Code|
+|------|----------------|------|
+| A | 3|000|
+|B|5|001|
+|C|6|010|
+|D|4|011|
+|E|2|100|
+
+- Message After encoding use `20*3=60bits`
+- table char take `5*8 + 5*3=55bits`
+- total size of massege is `115bit`
+- huffman size you can't use the fixed size of code for alphabets some char may appear few time so use only needed code for it.
+
+- Huffman for previous example.
+
+| Char | Count/Frequecy | Code| bits
+|------|----------------|------|--|
+|A  |3  |001|3*3=9|
+|B  |5  |10|5*2=10|
+|C  |6  |11|6*2=12|
+|D  |4  |01|4*2=8|
+|E  |2  |000|2*3=6|
+```c
+    /*
+          20
+       9
+     5
+           11
+    2 3 4 5 6 
+    E A D B C 
+    combine each small one with each other then for each line in right but 1 and each line in left but zero and then complete your table.
+    */
+    /*
+    
+    size of message is 45bits from table.
+    size of table is 5*8bits + 12 bits=52bits.
+    then total message size is 97bits.
+    */
+    /*
+    this operation like zip file or compressed files.
+    */
+```
+---
+- ## <p id=44>Minimum cost spanning True.</p>
+- 
+```c
+```
