@@ -1715,6 +1715,7 @@ finally time complexity is O(n)
     */
 ```
 ---
+
 - ## <p id=44>Minimum cost spanning True.</p>
 - 
 ```c
