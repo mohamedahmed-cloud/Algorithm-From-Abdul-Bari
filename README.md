@@ -916,7 +916,7 @@ finally time complexity is O(n)
 
     /*
     Master theory 
-        T(n)=a(t-b)+f(n)
+        T(n)=at(n-b)+f(n)
         assume a>0 and b>0 and f(n) =O(n^k) while k>=0
             -> note b>0 should be greater than 0.
 
@@ -925,8 +925,7 @@ finally time complexity is O(n)
 
         if a>1          ->O((n^k)*(a^(n/b)))
 
-        if a<1          -> O((n^k)*a^(n/b)) or 
-                        -> O(f(n)*a^(n/b))
+        if a<1          -> O((n^k))
 
     */
 ``` 
