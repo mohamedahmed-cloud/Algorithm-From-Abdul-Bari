@@ -8,47 +8,33 @@ Summary for Our algorithm &amp; Data Structure course
 
 - From [here](https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O)
 
-## Summary of vidoe 
-|Vidoe Summary | Video Name | Video Summary | Video Name |
+## Summary of video
+|Video Summary | Video Name | Video Summary | Video Name |
 |------|----------|------------|----------|
-| <a href="#1">Vidoe 1</a> | Introduction To Algorith| <a href="#2">Vidoe 2</a>| Priori Analysis and Posteriori|
-| <a href="#3">Vidoe 3</a>| Characteristics of Algorith | <a href="#4">Vidoe 4</a> |How Write and Analyze Algorithm|
+| <a href="#1">Video 1</a> | Introduction To Algorith| <a href="#2">Video 2</a>| Priori Analysis and Posteriori|
+| <a href="#3">Video 3</a>| Characteristics of Algorith | <a href="#4">Video 4</a> |How Write and Analyze Algorithm|
+| <a href="#5">Video 5</a> | Frequency Count Methods | <a href="#6">Video 6</a> | Time Complexity |  
+| <a href="#7">Video 7</a> | Time Complexity Example | <a href="#8">Video 8</a> | Time Complexity of While and if |
+| <a href="#9">Video 9</a> | Classes of Function | <a href="#10">Video 10</a> | Compare Class of Function| 
+|<a href="#11">Video 11</a> | Asympotic Notation Big oh-Omega-Theta #1 | <a href="#12">Video 12</a> | Asympotic Notation Big oh-Omega-Theta #2|
+|<a href="#13">Video 13</a> | Properity of Asympotic Notaion | <a href="#14">Video 14</a> | Comparison of Functions #1 |
+| <a href="#15">Video 15</a> |Comparison of Functions#2 |<a href="#16">Video 16</a> | Best Worst and Average Case Anaysis|
+| <a href="#17">Video 17</a> |DisJoint Sets || <a href="#18">Video 18</a> | Divide and Conquer |
+| <a href="#19">Video 19</a> | Recurrence Relation #1 || <a href="#20">Video 20</a> | Recurrence Relation #2 |
+| <a id=#21>Video 21</a> | Recurrence Relation #3 | <a href="#22">Video 22</a> |Recurrance Relation #4|
+| <a id=#23>Video 23</a> | Master Theorem Decreasing Function | <a href="#24">Video 24</a> | Recurrence Relation Dividing Function #1|
+| <a id=#25>Video 25</a> | Recurrence Relation Dividing Function #2 | <a href="#26">Video 26</a> |Recurrance Relation Dividing Function #3 |
+| <a id=#27>Video 27</a> | Master Theorem for Dividing Function | <a href="#28">Video 28</a> | Example for Master Theorem |
+| <a href="#29">Video 29</a> | Root Function | <a href="#30">Video 30</a> | Binary Search Recurrance Method|
+| <a href="#31">Video 31</a> | Binary Search iterative method | <a href="#32">Video 32</a> | Heap-heap Sort-heapify-Priority Queue |    
+| <a href="#33">Video 33</a> | Two Way mergeSort | <a href="#34">Video 34</a> | MergeSort Algorithm|
+| <a href="#35">Video 35</a> | MergeSort in depth analysis | <a href="#36">Video 36</a> | Quick Sort Algorihtm|
+| <a href="#37">Video 37</a> | QuickSort Analysis | <a href="#38">Video38| Strassens Matrix Muliplication|
+| <a href="#39">Video 39</a> | Greedy Algorithm | <a href="#40">Video </a> |KnapSack Problem|
+| <a href="#41">Video 41</a> |Job Sequencing With Deadline| <a href="#42">Video 42</a> |Optimal Merge pattern| 
+|<a id=#43>Video 43</a> |huffman Coding | <a id=#44>Video 44</a> | Prims and Kruskals Algorithm|
+| <a href="#45">Video 45</a> |Dijkstra Algorithm|<a href="#46">Video </a> | Principle of Optimality- Dynamic Programming | 
 
-- 
-- <a href="#4">Vidoe 4</a>
-- <a href="#5">Vidoe 5</a>
-- <a href="#6">Vidoe 6</a>
-- <a href="#7">Vidoe 7</a>
-- <a href="#8">Vidoe 8</a>
-- <a href="#9">Vidoe 9</a>
-- <a href="#10">Vidoe 10</a>
-- <a href="#11">Vidoe 11</a>
-- <a href="#12">Vidoe 12</a>
-- <a href="#13">Vidoe 13</a>
-- <a href="#14">Vidoe 14</a>
-- <a href="#15">Vidoe 15</a>
-- <a href="#16">Vidoe 16</a>
-- <a href="#17">Vidoe 17</a>
-- <a href="#18">Vidoe 18</a>
-- <a href="#19">Vidoe 19</a>
-- <a href="#20">Vidoe 20</a>
-- <a href="#21">Vidoe 21</a>
-- <a href="#22">Vidoe 22</a>
-- <a href="#23">Vidoe 23</a>
-- <a href="#24">Vidoe 24</a>
-- <a href="#25">Vidoe 25</a>
-- <a href="#26">Vidoe 26</a>
-- <a href="#27">Vidoe 27</a>
-- <a href="#28">Vidoe 28</a>
-- <a href="#29">Vidoe 29</a>
-- <a href="#30">Vidoe 30</a>
-- <a href="#31">Vidoe 31</a>
-- <a href="#32">Vidoe 32</a>
-- <a href="#33">Vidoe 33</a>
-- <a href="#34">Vidoe 34</a>
-- <a href="#35">Vidoe 35</a>
-- <a href="#36">Vidoe 36</a>
-- <a href="#37">Vidoe 37</a>
 
 ----
 ## <p id=1> introduction To Aglorithm </p>
