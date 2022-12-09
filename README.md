@@ -10,6 +10,7 @@ Summary for Our algorithm &amp; Data Structure course
 
 ## Summary of vidoe 
 |Vidoe Summary | Video Name | Video Summary | Video Name |
+|------|----------|------------|----------|
 | <a href="#1">Vidoe 1</a> | Introduction To Algorith| <a href="#2">Vidoe 2</a>| Priori Analysis and Posteriori|
 | <a href="#3">Vidoe 3</a>| Characteristics of Algorith | <a href="#4">Vidoe 4</a> |How Write and Analyze Algorithm|
 
