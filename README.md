@@ -24,7 +24,7 @@ Summary for Our algorithm &amp; Data Structure course
 | <a id="#21">Video 21</a> | Recurrence Relation #3 | <a href="#22">Video 22</a> |Recurrance Relation #4|
 | <a id="#23">Video 23</a> | Master Theorem Decreasing Function | <a href="#24">Video 24</a> | Recurrence Relation Dividing Function #1|
 | <a id="#25">Video 25</a> | Recurrence Relation Dividing Function #2 | <a href="#26">Video 26</a> |Recurrance Relation Dividing Function #3 |
-| <a id=#27>Video 27</a> | Master Theorem for Dividing Function | <a href="#28">Video 28</a> | Example for Master Theorem |
+| <a id="#27">Video 27</a> | Master Theorem for Dividing Function | <a href="#28">Video 28</a> | Example for Master Theorem |
 | <a href="#29">Video 29</a> | Root Function | <a href="#30">Video 30</a> | Binary Search Recurrance Method|
 | <a href="#31">Video 31</a> | Binary Search iterative method | <a href="#32">Video 32</a> | Heap-heap Sort-heapify-Priority Queue |    
 | <a href="#33">Video 33</a> | Two Way mergeSort | <a href="#34">Video 34</a> | MergeSort Algorithm|
