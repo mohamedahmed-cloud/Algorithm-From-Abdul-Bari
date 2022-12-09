@@ -19,11 +19,11 @@ Summary for Our algorithm &amp; Data Structure course
 |<a href="#11">Video 11</a> | Asympotic Notation Big oh-Omega-Theta #1 | <a href="#12">Video 12</a> | Asympotic Notation Big oh-Omega-Theta #2|
 |<a href="#13">Video 13</a> | Properity of Asympotic Notaion | <a href="#14">Video 14</a> | Comparison of Functions #1 |
 | <a href="#15">Video 15</a> |Comparison of Functions#2 |<a href="#16">Video 16</a> | Best Worst and Average Case Anaysis|
-| <a href="#17">Video 17</a> |DisJoint Sets || <a href="#18">Video 18</a> | Divide and Conquer |
-| <a href="#19">Video 19</a> | Recurrence Relation #1 || <a href="#20">Video 20</a> | Recurrence Relation #2 |
-| <a id=#21>Video 21</a> | Recurrence Relation #3 | <a href="#22">Video 22</a> |Recurrance Relation #4|
-| <a id=#23>Video 23</a> | Master Theorem Decreasing Function | <a href="#24">Video 24</a> | Recurrence Relation Dividing Function #1|
-| <a id=#25>Video 25</a> | Recurrence Relation Dividing Function #2 | <a href="#26">Video 26</a> |Recurrance Relation Dividing Function #3 |
+| <a href="#17">Video 17</a> |DisJoint Sets | <a href="#18">Video 18</a> | Divide and Conquer |
+| <a href="#19">Video 19</a> | Recurrence Relation #1 | <a href="#20">Video 20</a> | Recurrence Relation #2 |
+| <a id="#21">Video 21</a> | Recurrence Relation #3 | <a href="#22">Video 22</a> |Recurrance Relation #4|
+| <a id="#23">Video 23</a> | Master Theorem Decreasing Function | <a href="#24">Video 24</a> | Recurrence Relation Dividing Function #1|
+| <a id="#25">Video 25</a> | Recurrence Relation Dividing Function #2 | <a href="#26">Video 26</a> |Recurrance Relation Dividing Function #3 |
 | <a id=#27>Video 27</a> | Master Theorem for Dividing Function | <a href="#28">Video 28</a> | Example for Master Theorem |
 | <a href="#29">Video 29</a> | Root Function | <a href="#30">Video 30</a> | Binary Search Recurrance Method|
 | <a href="#31">Video 31</a> | Binary Search iterative method | <a href="#32">Video 32</a> | Heap-heap Sort-heapify-Priority Queue |    
@@ -32,7 +32,7 @@ Summary for Our algorithm &amp; Data Structure course
 | <a href="#37">Video 37</a> | QuickSort Analysis | <a href="#38">Video38| Strassens Matrix Muliplication|
 | <a href="#39">Video 39</a> | Greedy Algorithm | <a href="#40">Video </a> |KnapSack Problem|
 | <a href="#41">Video 41</a> |Job Sequencing With Deadline| <a href="#42">Video 42</a> |Optimal Merge pattern| 
-|<a id=#43>Video 43</a> |huffman Coding | <a id=#44>Video 44</a> | Prims and Kruskals Algorithm|
+|<a id="#43">Video 43</a> |huffman Coding | <a id=#44>Video 44</a> | Prims and Kruskals Algorithm|
 | <a href="#45">Video 45</a> |Dijkstra Algorithm|<a href="#46">Video </a> | Principle of Optimality- Dynamic Programming | 
 
 
