@@ -9,9 +9,11 @@ Summary for Our algorithm &amp; Data Structure course
 - From [here](https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O)
 
 ## Summary of vidoe 
-- <a href="#1">Vidoe 1</a>
-- <a href="#2">Vidoe 2</a>
-- <a href="#3">Vidoe 3</a>
+|Vidoe Summary | Video Name | Video Summary | Video Name |
+| <a href="#1">Vidoe 1</a> | Introduction To Algorith| <a href="#2">Vidoe 2</a>| Priori Analysis and Posteriori|
+| <a href="#3">Vidoe 3</a>| Characteristics of Algorith | <a href="#4">Vidoe 4</a> |How Write and Analyze Algorithm|
+
+- 
 - <a href="#4">Vidoe 4</a>
 - <a href="#5">Vidoe 5</a>
 - <a href="#6">Vidoe 6</a>
@@ -1718,4 +1720,88 @@ finally time complexity is O(n)
 - ## <p id=44>Minimum cost spanning True.</p>
 - 
 ```c
+/*
+    Graph is represented as -> G=(V,E)
+    v -> is a set of points like -> v={1,2,3}
+    E -> is a set of edges. -> E -> {(1,2),(2,3),(3,4)}
+    spanning Tree is a graph of a graph.[subgraph of a graph.]
+    spanning Tree don't contain any cycle in a graph.
+
+    differnt spanning Tree can Generate from a graph is  [nCp] -number of cycles.
+        n is number of edges in a  graph
+        p is number of points[vertices الرؤوس] in a spanning Tree - 1.
+        C is a combination.    
+*/
+/*
+    MInimum Cost spanning Tree.
+    - To find it We Have a to method: Prim's Method.
+                                    : Kruskals Method.
+*/
+/*
+    prim's call -> First of all you select a minimum Cost Edge but make sure that it should be connected by all the Selected vertice.
+    - Note we can't find a spanning Tree for not connected Graph.
+
+*/
+/*
+    Kruskal's Method -> Follow A greedy approach[algorithm]
+    it says that always select a minimum Cost Edge without forming[making] a cycle
+Time complexity :
+    Total Time to find a spanning Tree is :
+        O(|V|*|E|)  -> V number of Vertices[points]
+                    -> E number of Edges.
+        O(n^2) if E=V=n
+
+    We can improve time complexity of Kruskal's by :
+    using a data sstucture give you a minimum value : 
+        it's a min heap. -> Take a log time.
+     so the time complextity will be nlog(n) 
+*/
+/*
+    if give a graph and tell you he already created his spanning tree by the known edges of in the graph.
+    Question: tell you find the minimum value of unknown edges.
+    Answer: Value of unknown edges Must be  Max of Max value of edges that can make with all of them a cycle
+*/
+```
+---
+- ## <p id=45>Dijktra Algorithm</p>
+
+```c
+    /*
+    Dijktra -> for single source shortest path problem. 
+    in greedy method there are a prefined procedures and we follow these procedures to get optimal solution. 
+    Dijktra Algorithm give a procedure for getting an optimal solution.
+    */
+    /*
+    Dijktra -> can work with directed graphs and non directed graphs.
+    Dijktra work by relaxation method 
+points Value        2       4
+     points    1       2       3
+points Name            u       v
+        Relaxation Means -> if(d[u]+c(u,v)< d[v])
+                                d[v]=d[u]+d(c,v) 
+    */
+    /*
+    Worth Case for dijstra Algorithm is O(n^2)
+    n -> number of points. 
+    */
+    /*
+    non directed graph -> means you can walk from point 1 to point 2 and vice versa. 
+    To make non directed graphs to directed graphs
+     -> change the non directed arrow that is on edge to directed arrow in both side .
+    */
+    /*
+    Dijktra Algorithm Work when the edges value are positive
+     and if the edge values are negative it give us wrong
+     Answer[it might give us correct answer but still the way 
+     of Dijktra is wrong to solve it.]
+     
+    - Greedy Approach Failed when the edge is negative.
+    - There is another solution for it with Billman force algorithm that we will see in Dynamic programming.
+    */
+``` 
+----
+- ## <p id=46>Dynamic Programming</p>
+
+```c
+
 ```
