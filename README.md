@@ -30,9 +30,9 @@ Summary for Our algorithm &amp; Data Structure course
 | <a href="#33">Video 33</a> | Two Way mergeSort | <a href="#34">Video 34</a> | MergeSort Algorithm|
 | <a href="#35">Video 35</a> | MergeSort in depth analysis | <a href="#36">Video 36</a> | Quick Sort Algorihtm|
 | <a href="#37">Video 37</a> | QuickSort Analysis | <a href="#38">Video38| Strassens Matrix Muliplication|
-| <a href="#39">Video 39</a> | Greedy Algorithm | <a href="#40">Video </a> |KnapSack Problem|
+| <a href="#39">Video 39</a> | Greedy Algorithm | <a href="#40">Video 40 </a> |KnapSack Problem|
 | <a href="#41">Video 41</a> |Job Sequencing With Deadline| <a href="#42">Video 42</a> |Optimal Merge pattern| 
-|<a href="#43">Video 43</a> |huffman Coding | <a id=#44>Video 44</a> | Prims and Kruskals Algorithm|
+|<a href="#43">Video 43</a> |huffman Coding | <a  href=#44>Video 44</a> | Prims and Kruskals Algorithm|
 | <a href="#45">Video 45</a> |Dijkstra Algorithm|<a href="#46">Video </a> | Principle of Optimality- Dynamic Programming | 
 
 
@@ -1787,8 +1787,36 @@ points Name            u       v
     */
 ``` 
 ----
-- ## <p id=46>Dynamic Programming</p>
+- ## <p id=46>Dynamic Programming Introduction</p>
 
 ```c
-
+    /*
+    We will explain difference 
+    - between Dp & greedy method.
+    - Memoization and tabulation method.
+    */
+    /*
+    - Greedy Method :
+        - Are both use to find memoization problem.
+        - We follow predefined procedure to get optimal result.
+    - Dynamic programming :
+        - We will try to find out all posssible solutions and then pick up the best solution.
+    - Mostly dynamic programming problems are solved by recursive formulas
+    - in DP every stage we take a descision.
+    */
+    /*
+    find fib series by recursion and DP 
+    0 1 1 2 3 5 8 ..........
+    Tabulation 
+    Memoization 
+    */
+    //by Recursion.
+    // Time complexity is O(n)
+    int fib(int n){
+        if(n<=1){
+            return n;
+        }
+        return fib(n-2)+fib(n-1)
+    }
+    
 ```
