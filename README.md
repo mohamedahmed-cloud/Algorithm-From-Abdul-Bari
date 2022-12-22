@@ -21,7 +21,7 @@ Summary for Our algorithm &amp; Data Structure course
 | <a href="#15">Video 15</a> |Comparison of Functions#2 |<a href="#16">Video 16</a> | Best Worst and Average Case Anaysis|
 | <a href="#17">Video 17</a> |DisJoint Sets | <a href="#18">Video 18</a> | Divide and Conquer |
 | <a href="#19">Video 19</a> | Recurrence Relation #1 | <a href="#20">Video 20</a> | Recurrence Relation #2 |
-| <a href="#21">hrefeo 21</a> | Recurrence Relation #3 | <a href="#22">hrefeo 22</a> |Recurrance Relation #4|
+| <a href="#21">hrefeo 21</a> | Recurrence Relation #3 | <a href="#22">Video 22</a> |Recurrance Relation #4|
 | <a href="#23">Video 23</a> | Master Theorem Decreasing Function | <a href="#24">Video 24</a> | Recurrence Relation Dividing Function #1|
 | <a href="#25">Video 25</a> | Recurrence Relation Dividing Function #2 | <a href="#26">Video 26</a> |Recurrance Relation Dividing Function #3 |
 | <a href="#27">Video 27</a> | Master Theorem for Dividing Function | <a href="#28">Video 28</a> | Example for Master Theorem |
@@ -33,7 +33,7 @@ Summary for Our algorithm &amp; Data Structure course
 | <a href="#39">Video 39</a> | Greedy Algorithm | <a href="#40">Video 40 </a> |KnapSack Problem|
 | <a href="#41">Video 41</a> |Job Sequencing With Deadline| <a href="#42">Video 42</a> |Optimal Merge pattern| 
 |<a href="#43">Video 43</a> |huffman Coding | <a  href=#44>Video 44</a> | Prims and Kruskals Algorithm|
-| <a href="#45">Video 45</a> |Dijkstra Algorithm|<a href="#46">Video </a> | Principle of Optimality- Dynamic Programming | 
+| <a href="#45">Video 45</a> |Dijkstra Algorithm|<a href="#46">Video 46 </a> | Principle of Optimality- Dynamic Programming | 
 
 
 ----
@@ -1550,7 +1550,8 @@ finally time complexity is O(n)
 ```
 ```c
     /*
-    greedy method approach : Says that a problem should be solved in stage in each stage consider one input from a given problem and if that input is fessible then include in the solution.
+    greedy method approach : Says that a problem should be solved in stage in each 
+    stage consider one input from a given problem and if that input is fessible then include in the solution.
     */
     for i= 1 to n do {
         x=select(a);
@@ -1644,7 +1645,8 @@ finally time complexity is O(n)
     to make a merge for more than two array there are more ways to do it.
         - First : merge Random first one with second then merge result with three and so on.
         - Second : merge only two array with other until reach to only two array and merge them.
-        - Thrid : optimal solution -> on each merge choose the smallest two array and merge them until reach to only two array and then merge them.
+        - Thrid : optimal solution -> on each merge choose the smallest two array and merge them 
+        until reach to only two array and then merge them.
     */
 ```
 ---
@@ -1690,7 +1692,8 @@ finally time complexity is O(n)
            11
     2 3 4 5 6 
     E A D B C 
-    combine each small one with each other then for each line in right but 1 and each line in left but zero and then complete your table.
+    combine each small one with each other then for each line in right 
+    but 1 and each line in left but zero and then complete your table.
     */
     /*
     
@@ -1713,11 +1716,24 @@ finally time complexity is O(n)
     E -> is a set of edges. -> E -> {(1,2),(2,3),(3,4)}
     spanning Tree is a graph of a graph.[subgraph of a graph.]
     spanning Tree don't contain any cycle in a graph.
-
-    differnt spanning Tree can Generate from a graph is  [nCp] -number of cycles.
-        n is number of edges in a  graph
-        p is number of points[vertices الرؤوس] in a spanning Tree - 1.
-        C is a combination.    
+    complete graph  -> every vertex connected by all vertex  see example
+        "https://mathworld.wolfram.com/CompleteGraph.html"
+    not complet graph -> contain at least one edge doesn't connected to another
+        example => 
+        "https://www.researchgate.net/figure/Example-of-a-complete-graph-left-panel-and-of-an-incomplete-graph-right-panel_fig3_7547222"
+*/
+/*
+differnt spanning Tree can Generate from a graph 
+    -if he tell you You have a 4 vertex and doesn't give you a graph,  -> you solve the problem a s complete graph
+        and want from you to find the max spinning tree you can create.
+        max different spinning tree you can create from n vertex is [n^(n-2)] [Gayley's Formula]-> [4^(4-2)]
+    - if give you uncompleted graph and tell you to find max different spanning tree : 
+        WE Solve by Contraction-Deletion Theorem or kirchoff's method's
+        ReSource -> https://www.youtube.com/watch?v=NcOYysnlx-0
+    - min number of edges in a graph is -> 0
+    - min number of edges in a graph to be connected
+        = number of edges in spanning tree.=number of vertex(الروؤس)-1
+    - Max number of edges in a graph is -> n(n-1)/2 or nC2
 */
 /*
     MInimum Cost spanning Tree.
@@ -1725,7 +1741,8 @@ finally time complexity is O(n)
                                     : Kruskals Method.
 */
 /*
-    prim's call -> First of all you select a minimum Cost Edge but make sure that it should be connected by all the Selected vertice.
+    prim's call -> First of all you select a minimum Cost Edge but make sure 
+    that it should be connected by all the Selected vertice.
     - Note we can't find a spanning Tree for not connected Graph.
 
 */
@@ -1774,13 +1791,13 @@ points Name            u       v
     /*
     non directed graph -> means you can walk from point 1 to point 2 and vice versa. 
     To make non directed graphs to directed graphs
-     -> change the non directed arrow that is on edge to directed arrow in both side .
+     -> change the non directed line that is on edge to directed arrows in both side .
     */
     /*
     Dijktra Algorithm Work when the edges value are positive
      and if the edge values are negative it give us wrong
      Answer[it might give us correct answer but still the way 
-     of Dijktra is wrong to solve it.]
+     of Dijktra by greedy method is wrong to solve it.]
      
     - Greedy Approach Failed when the edge is negative.
     - There is another solution for it with Billman force algorithm that we will see in Dynamic programming.
@@ -1797,11 +1814,15 @@ points Name            u       v
     */
     /*
     - Greedy Method :
-        - Are both use to find memoization problem.
+        - Are both use to find optimization problem.
         - We follow predefined procedure to get optimal result.
     - Dynamic programming :
         - We will try to find out all posssible solutions and then pick up the best solution.
-    - Mostly dynamic programming problems are solved by recursive formulas
+    */
+    /*
+    DP -> Follows principle of optimality 
+    principle of optimality  -> Says the problem can be Taking sequence of decisions to get the optimal solution.
+
     - in DP every stage we take a descision.
     */
     /*
@@ -1811,12 +1832,46 @@ points Name            u       v
     Memoization 
     */
     //by Recursion.
-    // Time complexity is O(n)
+    // Time complexity is O(2^n)
     int fib(int n){
         if(n<=1){
             return n;
         }
         return fib(n-2)+fib(n-1)
-    }
+    } 
+```
+- `memoziation method` -> follows Top down approach
+- `tabuation method`  -> follows bottom up approach.
+- `mostly the DP problem` are solved by `tabulation method`
+```py
+    # optimization solution by memoization method.
     
+    # idea is storing previous calculated data in a dictionary[hash table]
+    # and restore it if needed. -> Time is O(n) and space is O(n)
+    # Code by python  
+    def fib(n,dict={}):
+        if n in dict:
+            return dict[n]
+        else:
+            if n<=1:
+                return n
+            dict[n]=fib(n-1,dict)+fib(n-2,dict)
+            return dict[n]
+    print(fib(200))
+    # optimization solution by tabulation method.
+    # idea for this is to make a table and store data in it
+    #  and calculate next element by sum previous two elements in table.
+    # code by python 
+       def tab(n):
+            store=[0]*(n+2)
+            store[1]=1
+            for i in range(2,n+1):
+                store[i]=store[i-1]+store[i-2]
+            return store[n]
+```
+----
+## <p id=#47>Multistage Graph<p>
+
+```c
+
 ```
